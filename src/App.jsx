@@ -12,8 +12,8 @@ import Title from "./components/Title";
 import "./App.css";
 
 function App() {
+  const [fetchDate, setFetchDate] = useState("2012-03-14");
   const [data, setData] = useState([]);
-  console.log(data);
   const {
     copyright,
     date,
@@ -24,20 +24,23 @@ function App() {
     title,
   } = data;
 
+  // const updateDate = newDate =>
+  // const updateDate = {}
+
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=i6kXrRAugKWMaP1p9kYk4nKRGQSmCIgqenF7r0hT&date=2012-03-14",
+        `https://api.nasa.gov/planetary/apod?api_key=i6kXrRAugKWMaP1p9kYk4nKRGQSmCIgqenF7r0hT&date=${fetchDate}`,
       )
       .then(response => setData(response.data))
       .catch(error => console.log(error));
     // return () => {
     //   effect
     // };
-  }, []);
+  }, [fetchDate]);
   return (
     <div className="App">
-      <DateForm />
+      <DateForm date={date} setFetchDate={setFetchDate} />
       <Title title={title} />
       <Date date={date} />
       <Explanation explanation={explanation} />
