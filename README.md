@@ -23,52 +23,52 @@ In this project you will build out a calculator using React. You have been given
 This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
 
 - [x ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd component-calculator`
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Add your team lead as collaborator on Github.
+- [x ] Clone your OWN version of the repository in your terminal
+- [x ] CD into the project base directory `cd component-calculator`
+- [x ] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [x ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [x ] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [ x] Submit a Pull-Request to merge Branch into master (student's Repository). **Please don't merge your own pull request**
+- [ x] Add your team lead as a reviewer on the pull-request
+- [ x] Your team lead will count the project as complete by merging the branch back into master.
+- [x ] Do your magic!
 
 # _Project - NASA APOD - Part I_
 
-- This is a really fun project, and one to show your family and friends when you've finished.
-- You will be starting from scratch and building the entire app
-- You don't have any design specs to follow for this project, so you may want to start by building a basic wireframe first. Make it simple at the beginning, since you don't know what data you'll be getting back from NASA
-- Once you get the data back, there may be more than you expected, or less than you expected, so your design plans may change. That's totally fine, and very normal in the real world. Just make the proper adjustments and move forward!
+x- This is a really fun project, and one to show your family and friends when you've finished.
+x- You will be starting from scratch and building the entire app
+x- You don't have any design specs to follow for this project, so you may want to start by building a basic wireframe first. Make it simple at the beginning, since you don't know what data you'll be getting back from NASA
+x- Once you get the data back, there may be more than you expected, or less than you expected, so your design plans may change. That's totally fine, and very normal in the real world. Just make the proper adjustments and move forward!
 
 ## Directions
 
 **STEP 1 - Planning**
 
-- If you want, this is the time to make a simple design spec (look up "simple wireframes" to see and example)
-- Once you have a design plan in mind, break down the designs into individual components
-- Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch
-- Now it's time to jump into the code!
+x- If you want, this is the time to make a simple design spec (look up "simple wireframes" to see and example)
+x- Once you have a design plan in mind, break down the designs into individual components
+x- Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch
+x- Now it's time to jump into the code!
 
 **Step 2 - File structure**
 
-- Take a look at what you planned and create the folders and files you need for each component
-- Leave most of them blank for now - You need to get your data from the API before you can really get these built
+x- Take a look at what you planned and create the folders and files you need for each component
+x- Leave most of them blank for now - You need to get your data from the API before you can really get these built
 
 **Step 3 - Fetching the Data**
 
-- In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA
-- Add an effect hook to handle the API call side effect
+x- In `App.js` (or where ever you wanted to fetch the data) add state for the data you'll be getting from NASA
+x- Add an effect hook to handle the API call side effect
 - Go to the [NASA APOD API docs](https://api.nasa.gov/api.html#apod) and read through the docs to see how to make the API call
-- You don't _need_ an API key, but feel free to get one if you'd like
-- Using the endpoint given, fetch the data using `axios`
-- In your `.then()` make sure to console.log the response so you can get your first look at the data 😃
-- Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don't want this effect synced up to any state/props), otherwise you will start an infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY:
+x- You don't _need_ an API key, but feel free to get one if you'd like
+x- Using the endpoint given, fetch the data using `axios`
+x- In your `.then()` make sure to console.log the response so you can get your first look at the data 😃
+x- Before you add your data to state, make sure your effect hook has a dependency array (probably empty, since we don't want this effect synced up to any state/props), otherwise you will start an infinite loop, and you will exceed the API rate limits of the DEMO_KEY and need to use a real API_KEY:
 
 DEMO KEY rate limits:
 
@@ -80,19 +80,19 @@ _Note: if the photo url is NOT a photo, you will need to learn how to display a 
 
 **STEP 4 - Adding the Data to State**
 
-- Once you have made the call correctly, and logged the data, add the data to the state property you built
+x- Once you have made the call correctly, and logged the data, add the data to the state property you built
 
 **STEP 5 - Display the Data**
 Now is the time to build out your other components. Compose your UI, and then pass the data to your children components via props so you can render it on the DOM.
 
 ## _MVP Requirements:_
 
-- Use the effect hook to fetch the APOD data when the component mounts
-- Display the APOD data in different components that are composed together to build your UI
+x- Use the effect hook to fetch the APOD data when the component mounts
+x- Display the APOD data in different components that are composed together to build your UI
 
 ## Pro Tips:
 
-- You may run into an error where your components try to access object properties before your data is finished being fetched - ie. `Cannot read property 'url' of undefined`. This means that the data you passed as props is undefined, when you were expecting it to be an object. You can fix this by simply adding something like this to any component that needs to read data from your state object:
+x- You may run into an error where your components try to access object properties before your data is finished being fetched - ie. `Cannot read property 'url' of undefined`. This means that the data you passed as props is undefined, when you were expecting it to be an object. You can fix this by simply adding something like this to any component that needs to read data from your state object:
 
 ```js
 // Display a loading message while the data is fetching
