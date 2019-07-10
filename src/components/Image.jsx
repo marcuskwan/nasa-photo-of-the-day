@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Image(props) {
+export default function Image({ hdurl }) {
   return (
     <div className="image">
-      {/* <img src={data} alt="apod" /> */}
+      <img src={hdurl} alt="apod" />
     </div>
   );
 }
 
-Image.propTypes = {};
-
-export default Image;
+Image.propTypes = {
+  hdurl: PropTypes.string,
+};

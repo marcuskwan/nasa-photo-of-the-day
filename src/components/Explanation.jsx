@@ -1,16 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-function Explanation(props) {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function Explanation({ explanation }) {
+  return (
+    <div className="explanation">
+      {explanation}
+    </div>
+  );
 }
 
 Explanation.propTypes = {
-
-}
-
-export default Explanation
+  explanation: PropTypes.string,
+};

@@ -1,16 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-function Date(props) {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function Date(props) {
+  return <div className="date">{props.date}</div>;
 }
 
 Date.propTypes = {
-
-}
-
-export default Date
+  date: PropTypes.string,
+};
