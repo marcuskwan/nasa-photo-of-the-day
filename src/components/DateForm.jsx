@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Form, Input, Button } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 export default function DateForm({ hdurl, setFetchDate, fetchDate }) {
@@ -17,15 +18,17 @@ export default function DateForm({ hdurl, setFetchDate, fetchDate }) {
   else
     return (
       <div className="date_form">
-        <form>
-          <input
+        <Form>
+          <Input
             onChange={handleChanges}
             name="date_picker"
             type="date"
             value={inputDate}
           />
-          <button onClick={submitDate}>Submit</button>
-        </form>
+          <Button onClick={submitDate} className="ui blue button">
+            Go
+          </Button>
+        </Form>
       </div>
     );
 }
