@@ -32,7 +32,10 @@ function App() {
       .get(
         `https://api.nasa.gov/planetary/apod?api_key=i6kXrRAugKWMaP1p9kYk4nKRGQSmCIgqenF7r0hT&date=${fetchDate}`,
       )
-      .then(response => setData(response.data))
+      .then(response => {
+        setData(response.data);
+      })
+
       .catch(error => console.log(error));
     // return () => {
     //   effect
@@ -40,7 +43,14 @@ function App() {
   }, [fetchDate]);
   return (
     <div className="App">
-      <DateForm date={date} setFetchDate={setFetchDate} />
+      <div className="logo">
+        <img
+          className="nasa"
+          src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+          alt="nasa"
+        />
+      </div>
+      <DateForm hdurl={hdurl} setFetchDate={setFetchDate} fetchDate={fetchDate}/>
       <Title title={title} />
       <Date date={date} />
       <Explanation explanation={explanation} />
