@@ -40,9 +40,9 @@ x- Let's say that the designs have changed. There are new ways and implimintatio
 
 ## _MVP Requirements:_
 
-- Refactor your project using a component library that was covered in class (SemanticUI or styled-components)
-- Implement and use at least a few styled components to beautify your project
-- Finally, implement snapshot testing in your react application
+x- Refactor your project using a component library that was covered in class (SemanticUI or styled-components)
+x- Implement and use at least a few styled components to beautify your project
+x- Finally, implement snapshot testing in your react application
 
 
 ## Stretch Problems

@@ -14,8 +14,8 @@ export default function DateForm({ hdurl, setFetchDate, fetchDate }) {
     event.preventDefault();
     setFetchDate(inputDate);
   };
-  if (!hdurl) return <h3>Loading...</h3>;
-  else
+  // if (!hdurl) return <h3>Loading...</h3>;
+  // else
     return (
       <div className="date_form">
         <Form>
@@ -25,7 +25,7 @@ export default function DateForm({ hdurl, setFetchDate, fetchDate }) {
             type="date"
             value={inputDate}
           />
-          <Button onClick={submitDate} className="ui blue button">
+          <Button color="blue" onClick={submitDate}>
             Go
           </Button>
         </Form>
