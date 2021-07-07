@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="ui container"
+>
+  <div
+    className="ui vertically divided middle aligned grid"
+  >
+    <div
+      className="two column row"
+    >
+      <div
+        className="column"
+      >
+        <img
+          className="ui image"
+          src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+        />
+      </div>
+      <div
+        className="center aligned column"
+      >
+        <div
+          className="ui icon header"
+        >
+          <i
+            aria-hidden="true"
+            className="search icon"
+            onClick={[Function]}
+          />
+          Search Date
+        </div>
+        <h3>
+          Loading...
+        </h3>
+      </div>
+    </div>
+    <div
+      className="one column row"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="title"
+        >
+          <h1 />
+        </div>
+        <div
+          className="date"
+        />
+        <div
+          className="explanation"
+        />
+        <div
+          className="media_type"
+        >
+          media type: 
+        </div>
+        <div
+          className="service_version"
+        >
+          service version: 
+        </div>
+        <div
+          className="copyright"
+        >
+          copyright: 
+        </div>
+      </div>
+    </div>
+    <div
+      className="one column row"
+    >
+      <div
+        className="column"
+      >
+        <img
+          className="ui image"
+        />
+      </div>
+    </div>
+  </div>
+  <div>
+    hi
+  </div>
+</div>
+`;
+
+exports[`<DateForm /> should match snapshot 1`] = `
+<h3>
+  Loading...
+</h3>
+`;
